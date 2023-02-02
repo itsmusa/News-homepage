@@ -35,8 +35,8 @@ This is my solution
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/itsmusa/News-homepage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution here](https://github.com/itsmusa/News-homepage)
+- Live Site URL: [live site here](https://news-homepage-gray-phi.vercel.app/)
 
 ## My process
 
