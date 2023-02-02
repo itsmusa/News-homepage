@@ -35,7 +35,7 @@ This is my solution
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/itsmusa/News-homepage)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
