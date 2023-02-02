@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+article,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, 
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: $veryDarkBlue;
+
+  @include breakpoint-up(medium) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  @include breakpoint-up(medium) {
+    font-size: 2.75rem;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  color: $darkGrayishBlue;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.5625rem;
+  font-size: 0.9375rem;
+  color: $off-white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $softRed;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: $veryDarkBlue;
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: $darkGrayishBlue;
+}
+
+.hide-for-mobile {}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

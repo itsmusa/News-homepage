@@ -1,0 +1,213 @@
+.highlight {
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(xlarge) {
+        grid-area: highlight;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint-up(mega) {
+        align-self: center;
+    }
+
+    &__article {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: auto auto auto;
+            grid-template-areas: 
+            "image image"
+            "title description"
+            "title button"
+            ;
+            gap: 1rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            gap: 2rem;
+        }
+
+        @include breakpoint-up(mega) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0;
+            grid-area: image;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0;
+            grid-area: title;
+        }
+    }
+
+    &__description {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0;
+            grid-area: description;
+            justify-self: start;
+        }
+
+        @include breakpoint-up(mega) {
+            align-self: end;
+        }
+    }
+
+    &__button {
+        @include breakpoint-up(large) {
+            grid-area: button;
+            justify-self: start;
+            align-self: end;
+        }
+    }
+}
+
+.latest {
+    background-color: $veryDarkBlue;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(xlarge) {
+        grid-area: latest;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint-up(mega) {
+        padding: 0 1rem;
+    }
+
+    &__title {
+        color: $softOrange;
+    }
+
+    &__article {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__article-title {
+        display: inline-block;
+        color: $off-white;
+        transition: .3s ease-in-out;
+        margin-bottom: 0.625rem;
+
+        &:hover {
+            color: $softOrange;
+        }
+
+        @include breakpoint-up(mega) {
+            margin-bottom: 0.3125rem;
+        }
+    }
+
+}
+
+.top {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(xlarge) {
+        grid-area: top;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint-up(mega) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: auto;
+        gap: 10px;
+
+        @include breakpoint-up(xlarge) {
+            height: auto;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @include breakpoint-up(xxlarge) {
+            height: 150px;
+        }
+
+        @include breakpoint-up(mega) {
+            grid-template-columns: 1fr 2fr;
+            height: auto;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include breakpoint-up(medium) {
+            display: block;
+        }
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $grayishBlue;
+
+        @include breakpoint-up(medium) {
+            font-size: 2rem;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 800;
+        color: $veryDarkBlue;
+        transition: .3s ease-in-out;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $softRed;
+        }
+
+        @include breakpoint-up(medium) {
+            font-size: 1rem;
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+
+        @include breakpoint-up(medium) {
+            font-size: 0.9375rem;
+        }
+    }
+}

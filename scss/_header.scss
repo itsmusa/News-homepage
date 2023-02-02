@@ -1,0 +1,108 @@
+.header {
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(large) {
+        margin-bottom: 3rem;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+
+    @include breakpoint-up(large) {
+        padding-top: 3rem;
+    }
+
+    &__logo {
+        width: 3rem;
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $veryDarkBlue;
+        opacity: 0.5;
+        visibility: hidden;
+    }
+
+    &__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: grid;
+        grid-template-rows: 1fr 9fr;
+        width: 75%;
+        height: 100vh;
+        background-color: $off-white;
+        padding: 2rem;
+        transition: .3s ease-in-out;
+
+        &.open {
+            right: 0;
+        }
+
+        @include breakpoint-up(large) {
+            position: static;
+            background: none;
+            display: block;
+            width: fit-content;
+            height: auto;
+            padding: 0;
+        }
+    }
+
+    &__list {
+        margin-top: 4rem;
+
+        @include breakpoint-up(large) {
+            display: flex;
+            margin: 0;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+            
+            @include breakpoint-up(large) {
+                margin-right: 2rem;
+                margin-bottom: 0;
+                color: $darkGrayishBlue;
+            }
+        }
+
+    }
+
+    &__link {
+        display: inline-block;
+        color: $veryDarkBlue;
+        width: 100%;
+        transition: .3s ease-in-out;
+        font-size: 1.125rem;
+
+        &:hover {
+            color: $softRed;
+        }
+
+        @include breakpoint-up(large) {
+            color: $darkGrayishBlue;
+            font-size: 1rem;
+        }
+    }
+
+    &__open {
+        cursor: pointer;
+    }
+
+    &__close {
+        justify-self: end;
+        align-self: start;
+        cursor: pointer;
+    }
+}

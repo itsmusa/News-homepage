@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <title>News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header container">
+    <nav class="nav" id="nav">
+      <div class="nav__overlay animate hide-for-desktop" id="overlay"></div>
+      <a href="#" class="nav__logo">
+        <img class="logo" src="/assets/images/logo.svg" alt="logo">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close hide-for-desktop" id="menu-close">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">New</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Popular</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Trending</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Categories</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__open hide-for-desktop" id="menu-open">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main container">
+    <section class="highlight">
+      <article class="highlight__article">
+        <picture class="highlight__image">
+          <source media="(min-width: 30em)" srcset="/assets/images/image-web-3-desktop.jpg">
+          <img src="/assets/images/image-web-3-mobile.jpg" alt="Colorful image showing abstract shapes">
+        </picture>
+        <h1 class="highlight__title">The Bright Future of Web 3.0?</h1>
+        <p class="highlight__description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <a href="#" class="highlight__button btn">Read more</a>
+      </article>
+    </section>
+
+    <section class="latest">
+      <h2 class="latest__title">New</h2>
+      <article class="latest__article">
+        <a href="" class="latest__article-title"><h3>Hydrogen VS Electric Cars</h3></a>
+        <p class="latest__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <div class="hr"></div>
+      <article class="latest__article">
+        <a href="" class="latest__article-title"><h3>The Downsides of AI Artistry</h3></a>
+        <p class="latest__description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <div class="hr"></div>
+      <article class="latest__article">
+        <a href="" class="latest__article-title"><h3>Is VC Funding Drying Up?</h3></a>
+        <p class="latest__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+
+    <section class="top">
+      <article class="top__article">
+        <div class="top__image">
+          <img src="/assets/images/image-retro-pcs.jpg" alt="old school computer">
+        </div>
+        <div class="top__description">
+          <p class="top__number">01</p>
+          <a href="#" class="top__title">Reviving Retro PCs</a>
+          <p class="top__text">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="top__article">
+        <div class="top__image">
+          <img src="/assets/images/image-top-laptops.jpg" alt="laptop keyboard">
+        </div>
+        <div class="top__description">
+          <p class="top__number">02</p>
+          <a href="#" class="top__title">Top 10 Laptops of 2022</a>
+          <p class="top__text">Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="top__article">
+        <div class="top__image">
+          <img src="/assets/images/image-gaming-growth.jpg" alt="game controler">
+        </div>
+        <div class="top__description">
+          <p class="top__number">03</p>
+          <a href="#" class="top__title">The Growth of Gaming</a>
+          <p class="top__text">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/itsmusa">Musa Magwaza</a>.
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

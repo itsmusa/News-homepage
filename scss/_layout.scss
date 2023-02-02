@@ -1,0 +1,28 @@
+.main {
+    margin-bottom: 4rem;
+    
+    @include breakpoint-up(xlarge) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto auto;
+        grid-template-areas: 
+        "highlight highlight"
+        "latest top"
+        ;
+        gap: 2rem;
+    }
+
+    @include breakpoint-up(xxlarge) {
+        gap: 3rem;
+    }
+
+    @include breakpoint-up(mega) {
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: auto auto;
+        grid-template-areas: 
+        "highlight latest"
+        "top top"
+        ;
+        gap: 5rem;
+    }
+}
