@@ -66,4 +66,3 @@ Going forward I want to continue using CSS grid and CSS animations as I am still
 
 - Website - [Musa Magwaza](https://www.your-site.com)
 - Frontend Mentor - [@itsmusa](https://www.frontendmentor.io/profile/itsmusa)
-- Twitter - [@flawedgoat](https://www.twitter.com/flawedgoat)
